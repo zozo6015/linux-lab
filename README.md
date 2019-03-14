@@ -18,7 +18,7 @@ run a configuration command. For example:
 
 Then run:
 
-  lb build
+    lb build
   
-  After a little while you will get the iso image into the project folder. 
+After a little while you will get the iso image into the project folder. 
 
