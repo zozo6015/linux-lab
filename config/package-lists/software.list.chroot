@@ -1,0 +1,6 @@
+build-essential
+curl
+vim
+haskell-platform
+gparted
+dosfstools
