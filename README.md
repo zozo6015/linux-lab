@@ -14,7 +14,7 @@ clone the repo with:
 run a configuration command. For example:
 
     cd linux-lab
-    lb config --bootappend-live "boot=live compoments hostname=live-lab username=labuser" -a amd64 --apt-options "--force-yes --yes" --debconf-frontend dialog --debian-installer false --apt-recommends false --security false --memtest false 
+    lb config --bootappend-live "boot=live compoments hostname=live-lab username=labuser" -a amd64 --apt-options "--force-yes --yes" --debconf-frontend dialog --debian-installer false --apt-recommends false --security true --memtest false 
 
 Then run:
 
