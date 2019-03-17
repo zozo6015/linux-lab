@@ -1,3 +1,2 @@
 #!/bin/bash
 systemctl enable rc-local.service
-chown -R 1000:1000 ~student/

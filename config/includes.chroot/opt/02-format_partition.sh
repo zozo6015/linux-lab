@@ -15,3 +15,5 @@ if [ ${RESULT} -eq 0 ]; then
 	  mount /dev/sdb3 /mnt/windows -o uid=1000,gid=1000
 	fi
 fi
+
+chown -R 1000.1000 /home/student

@@ -1,10 +1,11 @@
 [Unit]
 Description=create persistent partition
-ConditionPathExists=/opt/create_partition.sh
+ConditionPathExists=/opt/02-format_partition.sh
 
 [Service]
 Type=forking
-ExecStart=/bin/bash /opt/*.sh
+ExecStartPre=/bin/bash /opt/01-create-partition.sh
+ExecStart=/bin/bash /opt/02-format_partition.sh
 TimeoutSec=0
 StandardOutput=tty
 RemainAfterExit=yes
