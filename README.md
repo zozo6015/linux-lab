@@ -14,7 +14,7 @@ clone the repo with:
 run a configuration command. For example:
 
     cd linux-lab
-    lb config --bootappend-live "boot=live compoments hostname=live-lab username=labuser" -a amd64 --apt-options "--force-yes --yes" --debconf-frontend dialog --debian-installer false --apt-recommends false --security true --memtest false 
+    lb config
 
 Then run:
 
@@ -22,3 +22,11 @@ Then run:
   
 After a little while you will get the iso image into the project folder. 
 
+Note: The system is built with xcfe4 destop system. If you want to change it to something else you need to edit
+the following file: `config/packege-list/desktop.list.chroot` 
+
+for gnome use `task-gnome-desktop`
+
+for kde use `task-kde-desktop`
+
+if you want localized kde then you can use for example for german `task-german-kde-desktop`
