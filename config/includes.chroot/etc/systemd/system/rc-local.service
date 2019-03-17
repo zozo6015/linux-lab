@@ -1,0 +1,13 @@
+[Unit]
+Description=create persistent partition
+ConditionPathExists=/opt/create_partition.sh
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /opt/*.sh
+TimeoutSec=0
+StandardOutput=tty
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

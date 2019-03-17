@@ -1,1 +1,1 @@
-iproute2 keyboard-configuration live-config-doc live-tools locales locales-all sudo user-setup rsync uuid-runtime wget
+iproute2 keyboard-configuration live-config-doc live-tools locales locales-all sudo user-setup rsync uuid-runtime wget libasound2-dev gconf2 gconf-service gvfs-bin

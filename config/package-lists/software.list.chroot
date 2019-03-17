@@ -2,5 +2,11 @@ build-essential
 curl
 vim
 haskell-platform
-gparted
+haskell-platform-doc
+parted
 dosfstools
+git-gui
+hoogle
+libghc-hoogle-dev
+libghc-hoogle-doc
+libghc-hoogle-prof

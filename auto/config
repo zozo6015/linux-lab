@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+	--bootappend-live "boot=live components hostname=live-lab username=student" \
+	--architectures amd64 \
+	--archive-areas "main contrib non-free" \
+	--apt-options "--force-yes --yes" \
+	--debconf-frontend dialog \
+	--debian-installer false \
+	--apt-recommends yes \
+	--security true \
+	--memtest false \
+	--debian-installer-gui false \
+	"${@}"
