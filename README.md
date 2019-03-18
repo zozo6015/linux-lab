@@ -30,3 +30,7 @@ for gnome use `task-gnome-desktop`
 for kde use `task-kde-desktop`
 
 if you want localized kde then you can use for example for german `task-german-kde-desktop`
+
+The image will create a windows partition on the USB drive if the image is written on a drive. The windows partition will be mounted into /mnt/windows and symlinked to /home/student/windows which can be used as a persistent data store.
+
+The windows cannot see this partition since windows OS cannot read other than the first partition of the USB drives.
